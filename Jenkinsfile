@@ -16,7 +16,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'echo Deploying...'
-		sh 'docker build -t "simple_image:dockerfile" .'
+		sh 'docker build -t "simple_image:Dockerfile" .'
 		sh 'docker run simple_image'
             }
         }
